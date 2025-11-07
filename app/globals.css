@@ -12,15 +12,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Remove or comment out the dark mode media query since you want white background */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
+  /* Remove the background line to let Tailwind handle it */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
