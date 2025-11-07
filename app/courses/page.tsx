@@ -3,12 +3,13 @@
 import { useState } from 'react';
 
 export default function CoursesPage() {
-  const [activeLevel, setActiveLevel] = useState('100');
+  // Restrict activeLevel to specific valid keys
+  const [activeLevel, setActiveLevel] = useState<'100' | '200' | '300' | '400'>('100');
 
-  const levels = ['100', '200', '300', '400'];
+  const levels: ('100' | '200' | '300' | '400')[] = ['100', '200', '300', '400'];
 
   // Sample course data - replace with actual ABSU CSC courses
-  const courses = {
+  const courses: Record<'100' | '200' | '300' | '400', { code: string; title: string; units: number; description: string }[]> = {
     '100': [
       { code: 'CSC 101', title: 'Introduction to Computer Science', units: 3, description: 'Basic concepts of computing, problem solving, and programming fundamentals.' },
       { code: 'CSC 102', title: 'Introduction to Problem Solving', units: 2, description: 'Algorithmic thinking and problem-solving techniques.' },
