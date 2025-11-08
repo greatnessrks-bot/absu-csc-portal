@@ -8,7 +8,7 @@ export default function AboutPage() {
   
   // Placeholder images - replace with actual ABSU CSC images
   const images = [
-    'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200',
+    '/images/slideshow1.jpg',
     'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200',
     'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200',
     'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200'
